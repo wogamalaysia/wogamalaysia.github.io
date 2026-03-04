@@ -4,9 +4,126 @@
   <title>WOGA Malaysia</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      color: #f5f5f5;
+      font-family: 'Inter', sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    header h2 {
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: 1px solid #c6a85b;
+      color: #c6a85b;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #c6a85b;
+      color: black;
+    }
+
+    .hero {
+      padding: 120px 8%;
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 58px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #aaa;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    .section {
+      padding: 80px 8%;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .section h3 {
+      font-size: 28px;
+      color: #c6a85b;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      padding: 40px 8%;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
 </head>
-<body style="background:black;color:white;text-align:center;font-family:Arial;padding:100px;">
-  <h1>WOGA Malaysia</h1>
-  <p>Luxury. Corporate. Golf Affairs.</p>
+<body>
+
+<header>
+  <h2>WOGA MALAYSIA</h2>
+  <a href="#contact" class="btn">CONTACT</a>
+</header>
+
+<section class="hero">
+  <h1>Elevating The World of Golf Affairs.</h1>
+  <p>
+    WOGA Malaysia blends corporate precision with dynamic execution,
+    delivering premium golf experiences and strategic brand engagements.
+  </p>
+  <a href="#services" class="btn">EXPLORE SERVICES</a>
+</section>
+
+<section class="section" id="services">
+  <h3>Our Focus</h3>
+  <p>
+    Corporate Golf Events • Brand Collaborations • Strategic Partnerships • Premium Sporting Experiences
+  </p>
+</section>
+
+<section class="section" id="contact">
+  <h3>Get In Touch</h3>
+  <p>
+    For corporate inquiries and collaborations:
+    <br><br>
+    <a href="mailto:hello@wogamalaysia.com" class="btn">EMAIL US</a>
+  </p>
+</section>
+
+<div class="footer">
+  © 2026 WOGA Malaysia. All rights reserved.
+</div>
+
 </body>
 </html>
