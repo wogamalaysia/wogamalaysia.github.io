@@ -8,6 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background-color: #0b0b0b;
@@ -21,12 +25,11 @@
       align-items: center;
       padding: 25px 8%;
       border-bottom: 1px solid rgba(255,255,255,0.08);
+      animation: fadeIn 1s ease;
     }
 
-    header h2 {
-      font-weight: 500;
-      letter-spacing: 2px;
-      color: #c6a85b;
+    header img {
+      height: 40px;
     }
 
     .btn {
@@ -44,9 +47,34 @@
       color: black;
     }
 
+    /* CONSTRUCTION BAR */
+    .construction {
+      background: #c6a85b;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 15px;
+      top: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
     .hero {
       padding: 120px 8%;
       max-width: 900px;
+      animation: fadeUp 1s ease;
+    }
+
+    .cone {
+      font-size: 60px;
+      margin-bottom: 10px;
     }
 
     .hero h1 {
@@ -67,6 +95,7 @@
     .section {
       padding: 80px 8%;
       border-top: 1px solid rgba(255,255,255,0.05);
+      animation: fadeUp 1s ease;
     }
 
     .section h3 {
@@ -83,6 +112,23 @@
       border-top: 1px solid rgba(255,255,255,0.05);
     }
 
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 38px;
@@ -93,17 +139,27 @@
 
 <body>
 
+<!-- CONSTRUCTION BAR -->
+<div class="construction" id="constructionBar">
+  🚧 Website under construction — full experience launching soon.
+  <span class="close-btn" onclick="closeBar()">✕</span>
+</div>
+
 <header>
-  <h2>W.O.G.A</h2>
+  <img src="logo.png" alt="WOGA Logo">
   <a href="#contact" class="btn">CONTACT</a>
 </header>
 
 <section class="hero">
+  <div class="cone">🚧</div>
+
   <h1>Organising Golf Tournaments With Purpose.</h1>
+
   <p>
     We organise golf tournaments where our marketing actually makes sense. 
     Private, nationwide or invitation-only experiences — we bring everything together.
   </p>
+
   <a href="#services" class="btn">EXPLORE SERVICES</a>
 </section>
 
@@ -137,6 +193,15 @@
 <div class="footer">
   © 2026 WOGA Malaysia. All rights reserved.
 </div>
+
+<script>
+function closeBar() {
+  document.getElementById("constructionBar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
