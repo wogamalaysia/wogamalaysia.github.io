@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Website Under Construction</title>
+<title>W.O.G.A - Under Construction</title>
 
 <style>
-/* GENERAL STYLES */
 body {
     margin: 0;
-    font-family: 'Arial', Helvetica, sans-serif;
-    background: #ffffff;
-    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #f5f5f5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    text-align: center;
 }
 
-/* HEADER / LOGO */
+/* HEADER */
 header {
-    padding: 25px;
-    font-size: 22px;
+    padding: 25px 40px;
+    font-size: 20px;
     font-weight: 600;
+    color: #d4af37; /* gold */
 }
 
 /* HERO SECTION */
@@ -30,57 +29,69 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+    padding: 40px;
+    max-width: 900px;
 }
 
+/* CONE */
 .cone {
-    font-size: 100px;
+    font-size: 90px;
     margin-bottom: 20px;
 }
 
+/* TEXT */
 h1 {
-    font-size: 48px;
+    font-size: 52px;
     margin: 10px 0;
 }
 
 p {
-    color: #666;
+    color: #bbb;
     font-size: 20px;
     line-height: 1.6;
     max-width: 600px;
-    margin: 0 auto 30px auto;
 }
 
-/* BUTTON LINKS */
-.links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+/* BUTTONS */
+.buttons {
+    margin-top: 30px;
 }
 
-.links a {
+.buttons a {
     display: inline-block;
-    padding: 12px 28px;
-    background-color: #0077ff;
-    color: white;
+    margin-right: 15px;
+    padding: 12px 26px;
     text-decoration: none;
     font-weight: 600;
     border-radius: 6px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: 0.2s;
 }
 
-.links a:hover {
-    background-color: #005bb5;
-    transform: translateY(-2px);
+/* GOLD BUTTON */
+.primary {
+    background: #d4af37;
+    color: #000;
+}
+
+.primary:hover {
+    background: #b8962e;
+}
+
+/* OUTLINE BUTTON */
+.secondary {
+    border: 1px solid #d4af37;
+    color: #d4af37;
+}
+
+.secondary:hover {
+    background: #d4af37;
+    color: #000;
 }
 
 /* FOOTER */
 footer {
-    padding: 20px;
-    color: #999;
+    padding: 20px 40px;
+    color: #777;
     font-size: 14px;
 }
 </style>
@@ -89,178 +100,30 @@ footer {
 <body>
 
 <header>
-W.O.G.A Malaysia
+W.O.G.A
 </header>
 
 <div class="hero">
-    <div class="cone">🚧</div>
-    <h1>Website Under Construction</h1>
-    <p>
-        Our website is currently being built.<br>
-        We’re working hard to bring you a better experience soon.<br>
-        Thank you for your patience!
-    </p>
 
-    <div class="links">
-        <a href="#">Contact</a>
-        <a href="https://www.instagram.com/woga.my/">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Email</a>
-    </div>
+<div class="cone">🚧</div>
+
+<h1>Website Under Construction</h1>
+
+<p>
+We’re currently building something better for you.<br>
+Our new website will be launching soon.
+</p>
+
+<div class="buttons">
+    <a href="https://www.instagram.com/woga.my/" class="primary">Instagram</a>
+    <a href="#" class="secondary">Contact Us</a>
 </div>
+
+</div>
+
+<footer>
+© 2026 W.O.G.A - World Of Golf Affairs
+</footer>
 
 </body>
 </html>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>WOGA World Of Golf Affairs</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      background-color: #0f0f0f;
-      color: #f5f5f5;
-      font-family: 'Inter', sans-serif;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 25px 8%;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    header h2 {
-      font-weight: 500;
-      letter-spacing: 2px;
-    }
-
-    .btn {
-      padding: 12px 24px;
-      border: 1px solid #c6a85b;
-      color: #c6a85b;
-      text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 1px;
-      transition: 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #c6a85b;
-      color: black;
-    }
-
-    .hero {
-      padding: 120px 8%;
-      max-width: 900px;
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 58px;
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #aaa;
-      line-height: 1.6;
-      margin-bottom: 40px;
-      max-width: 600px;
-    }
-
-    .section {
-      padding: 80px 8%;
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
-
-    .section h3 {
-      font-size: 28px;
-      color: #c6a85b;
-      margin-bottom: 20px;
-    }
-
-    .footer {
-      padding: 40px 8%;
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 36px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h2>W.O.G.A-World Of Golf Affairs</h2>
-  <a href="#contact" class="btn">CONTACT</a>
-</header>
-
-<section class="hero">
-  <h1>Organising Golf Tournaments With A Purpose.</h1>
-  <p>
-    We organise golf tournaments where our marketing 'actually
-    makes sense' . Private, Nationwide or 'By Invitation Only Lounge', 
-    we put the pieces together.
-    COMING SOON...
-  </p>
-  <a href="#services" class="btn">EXPLORE SERVICES</a>
-</section>
-
-<section class="section" id="services">
-  <h3>Our Focal Point</h3>
-  <p>
-    Golf Tournaments • Brand Marketing • Business Coalition • Offline Top-Tier Invites
-  </p>
-</section>
-<section class="section" id="news">
-  <h3>Latest Golf News</h3>
-
-  <p><strong>Rolex Series Tournament</strong><br>
-  The latest Rolex Series tournament delivered thrilling performances as top international golfers competed for the title.</p>
-
-  <p><strong>Hole-In-One Achievement</strong><br>
-  A spectacular hole-in-one was recorded during an overseas tournament, exciting players and spectators alike.</p>
-
-</section>
-<section class="section" id="contact">
-  <h3>Get In Touch</h3>
-  <p>
-    For enquiries:
-    <br><br>
-    <a href="mailto:wogamarketing@gmail.com" class="btn">EMAIL US</a>
-    <a href="https://wa.me/601113210570" class="btn">WHATSAPP US</a>
-  </p>
-</section>
-<section class="section">
-  <h3>Follow Us</h3>
-  <div class="socials">
-    
-    <a href="https://instagram.com/woga.my" target="_blank" aria-label="Instagram">
-      <svg viewBox="0 0 24 24">
-        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8zm6.4-.9a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"/>
-      </svg>
-    </a>
-  </div>
-</section>
-<div class="footer">
-  © 2026 WOGA Malaysia. All rights reserved.
-</div>
-
-</body>
-</html>
-Added golf news section
