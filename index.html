@@ -1,207 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>WOGA World Of Golf Affairs</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>WOGA - Under Construction</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #f5d77b;
+}
 
-    body {
-      margin: 0;
-      background-color: #0b0b0b;
-      color: #f5f5f5;
-      font-family: 'Inter', sans-serif;
-    }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 25px 8%;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      animation: fadeIn 1s ease;
-    }
+.logo {
+    max-width: 160px;
+}
 
-    header img {
-      height: 40px;
-    }
+/* MAIN WRAPPER */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    .btn {
-      padding: 12px 24px;
-      border: 1px solid #c6a85b;
-      color: #c6a85b;
-      text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 1px;
-      transition: 0.3s ease;
-    }
+/* HERO */
+.hero {
+    text-align: center;
+    margin-top: 10px;
+}
 
-    .btn:hover {
-      background: #c6a85b;
-      color: black;
-    }
+.cone {
+    font-size: 80px;
+    margin: 20px 0;
+}
 
-    /* CONSTRUCTION BAR */
-    .construction {
-      background: #c6a85b;
-      color: black;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-      font-weight: 500;
-      position: relative;
-    }
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
 
-    .close-btn {
-      position: absolute;
-      right: 15px;
-      top: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
+.subtitle {
+    color: #d6b85a;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
 
-    .hero {
-      padding: 120px 8%;
-      max-width: 900px;
-      animation: fadeUp 1s ease;
-    }
+/* SECTIONS */
+.section {
+    margin-top: 50px;
+}
 
-    .cone {
-      font-size: 60px;
-      margin-bottom: 10px;
-    }
+.section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    border-left: 4px solid #f5d77b;
+    padding-left: 10px;
+}
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 60px;
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
+.text {
+    color: #d6b85a;
+    line-height: 1.7;
+}
 
-    .hero p {
-      font-size: 18px;
-      color: #aaa;
-      line-height: 1.6;
-      margin-bottom: 40px;
-      max-width: 600px;
-    }
+/* NEWS CARDS */
+.news {
+    margin-top: 15px;
+}
 
-    .section {
-      padding: 80px 8%;
-      border-top: 1px solid rgba(255,255,255,0.05);
-      animation: fadeUp 1s ease;
-    }
+.card {
+    border: 1px solid #3a3315;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
 
-    .section h3 {
-      font-size: 28px;
-      color: #c6a85b;
-      margin-bottom: 20px;
-    }
+.card h3 {
+    color: #f5d77b;
+    margin-bottom: 8px;
+}
 
-    .footer {
-      padding: 40px 8%;
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
+.card p {
+    color: #d6b85a;
+    font-size: 14px;
+    line-height: 1.5;
+}
 
-    /* ANIMATIONS */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+/* LINKS */
+.links {
+    text-align: center;
+    margin-top: 40px;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+.links a {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 18px;
+    border: 1px solid #f5d77b;
+    color: #f5d77b;
+    text-decoration: none;
+    border-radius: 6px;
+}
 
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 38px;
-      }
-    }
-  </style>
+.links a:hover {
+    background: #f5d77b;
+    color: #0b0b0b;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    color: #7a6a2f;
+}
+</style>
 </head>
 
 <body>
 
-<!-- CONSTRUCTION BAR -->
-<div class="construction" id="constructionBar">
-  🚧 Website under construction — full experience launching soon.
-  <span class="close-btn" onclick="closeBar()">✕</span>
-</div>
-
 <header>
-  <img src="WOGA LOGO CROP (1).jpg" alt="WOGA Logo">
-  <a href="#contact" class="btn">CONTACT</a>
+    <img src="WOGA LOGO CROP (1).jpg" alt="WOGA Logo" class="logo">
 </header>
 
-<section class="hero">
-  <div class="cone">🚧</div>
+<div class="container">
 
-  <h1>Organising Golf Tournaments With Purpose.</h1>
+    <!-- HERO -->
+    <div class="hero">
+        <div class="cone">🚧</div>
+        <h1>Under Construction</h1>
+        <div class="subtitle">
+            We are currently building something exceptional.<br>
+            Please check back soon.
+        </div>
+    </div>
 
-  <p>
-    We organise golf tournaments where our marketing actually makes sense. 
-    Private, nationwide or invitation-only experiences — we bring everything together.
-  </p>
+    <!-- FOCAL POINT SECTION -->
+    <div class="section">
+        <h2>Our Focal Point</h2>
+        <div class="text">
+            Golf Tournaments • Brand Marketing • Business Coalition • Offline Top-Tier Invites
+        </div>
+    </div>
 
-  <a href="#services" class="btn">EXPLORE SERVICES</a>
-</section>
+    <!-- NEWS SECTION -->
+    <div class="section">
+        <h2>Latest Golf News</h2>
 
-<section class="section" id="services">
-  <h3>Our Focal Point</h3>
-  <p>
-    Golf Tournaments • Brand Marketing • Business Coalition • Exclusive Invitations
-  </p>
-</section>
+        <div class="news">
 
-<section class="section" id="news">
-  <h3>Latest Golf News</h3>
+            <div class="card">
+                <h3>Rolex Series Tournament</h3>
+                <p>
+                    The latest Rolex Series tournament delivered thrilling performances
+                    as top international golfers competed for the title.
+                </p>
+            </div>
 
-  <p><strong>Rolex Series Tournament</strong><br>
-  The latest Rolex Series tournament delivered thrilling performances as top international golfers competed for the title.</p>
+            <div class="card">
+                <h3>Hole-In-One Achievement</h3>
+                <p>
+                    A spectacular hole-in-one was recorded during an overseas tournament,
+                    exciting players and spectators alike.
+                </p>
+            </div>
 
-  <p><strong>Hole-In-One Achievement</strong><br>
-  A spectacular hole-in-one was recorded during an overseas tournament, exciting players and spectators alike.</p>
-</section>
+        </div>
+    </div>
 
-<section class="section" id="contact">
-  <h3>Get In Touch</h3>
-  <p>
-    For enquiries:
-    <br><br>
-    <a href="mailto:wogamarketing@gmail.com" class="btn">EMAIL US</a>
-    <a href="https://wa.me/601113210570" class="btn">WHATSAPP US</a>
-  </p>
-</section>
+    <!-- LINKS -->
+    <div class="links">
+        <a href="https://instagram.com/yourpage">Instagram</a>
+        <a href="https://facebook.com/yourpage">Facebook</a>
+        <a href="mailto:youremail@example.com">Email</a>
+        <a href="https://wa.me/60123456789">WhatsApp</a>
+    </div>
 
-<div class="footer">
-  © 2026 WOGA Malaysia. All rights reserved.
 </div>
 
-<script>
-function closeBar() {
-  document.getElementById("constructionBar").style.display = "none";
-}
-</script>
-
-</body>
-</html>
+<footer>
+    © 2026 WOGA. All rights reserved.
+</footer>
 
 </body>
 </html>
